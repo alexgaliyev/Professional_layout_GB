@@ -1,5 +1,6 @@
 /*Общие стили*/
 :root {
+    --white-bkg: #FFFF;
     --black-bkj: #222222;
     --pink-bkg: #F1E4E6;
     --pink-color: #F18899;
@@ -31,6 +32,17 @@
     color: #9F9F9F;
 }
 
+.sec_1-H1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--pink-color);
+}
+
+.top20px {
+    margin-top: 20px;
+}
+
+
 
 /*Меню*/
 .header-menu {
@@ -50,6 +62,19 @@
     margin-right: 41px;
 }
 
+.icon {
+    fill: var(--white-bkg);
+}
+
+.icon:hover {
+    fill: var(--pink-color)
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
 .header-burger {
     border: none;
     background-color: transparent;
@@ -61,8 +86,66 @@
 
 .header-nav {
     display: none;
+    position: absolute;
+    width: 232px;
+    min-height: 764px;
+    right: 0;
+    top: 75px;
+    background-color: var(--white-bkg);
+    padding-left: 34px;
+    right: 0;
 }
 
+.header-nav-close {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-nav-close-img {
+    margin: 16px 16px 0 0;
+}
+
+.header-burger:hover+.header-nav,
+.header-burger:focus+.header-nav {
+    display: block;
+}
+
+.header-nav-h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.header-nav-h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+.nav-item-title {
+    padding-top: 11px;
+    padding-left: 20px;
+    opacity: 0.6;
+}
+
+.nav-item-title:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-item-title:active {
+    color: var(--pink-color);
+}
+
+.header-link {
+    margin-left: 33px;
+}
 
 
 /*Подвал*/
@@ -156,7 +239,19 @@
 }
 
 .footer-soc {
-    margin-right: 10px;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-bkg);
+}
+
+.footer-soc:hover {
+    fill: var(--pink-bkg);
+    background-color: var(--pink-color);
 }
 
 
@@ -275,38 +370,40 @@
     margin-bottom: 60px;
 }
 
-.ind-sec_3-img-item {
-    position: relative;
-    margin: 15 0;
-    padding: 0 15;
-}
 
 .ind-sec_3-inner {
     position: relative;
-    display: flex;
 }
 
-.ind-sec_3-inner:before {
+.ind-sec_3-inner::before {
+    content: "";
+    background: rgba(0, 0, 0, .8);
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background: rgba(0, 0, 0, .8);
+    right: 0;
+    bottom: 0;
     opacity: 0;
     transition: all 1s ease;
 }
 
-.ind-sec_3-inner:hover:before {
+.ind-sec_3-add {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.ind-sec_3-sales:hover .ind-sec_3-inner::before,
+.ind-sec_3-sales:hover .ind-sec_3-add {
     opacity: 1;
 }
 
-.ind-sec_3-add {
-    position: absolute;
-    top: 200px;
-    right: 110px;
-    opacity: 0;
+.add {
+    border: none;
+    background-color: transparent;
 }
 
 .ind-sec_3-img {
@@ -314,18 +411,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-.hover {
-    width: 100%;
-    object-fit: cover;
-    background-color: #222222;
-}
-
-.hover:hover {
-    background-color: #222222;
-}
-
-.ind-sec_3-add {}
 
 .ind-sec_3-H3 {
     font-weight: bold;
@@ -407,10 +492,63 @@
     background: var(--pink-bkg);
 }
 
-.reg-sec_1-H1 {
-    text-transform: uppercase;
+/*SEC 2*/
+.reg-sec_2-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-reg {
+    background: #FFFFFF;
+    height: 45px;
+    width: 360px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    text-indent: 16px;
+}
+
+.reg-sec_2-h4 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black-bkj);
+}
+
+.text-reg {
+    width: 359px;
+    color: #B1B1B1;
+}
+
+.submit {
+    margin-top: 40px;
+    height: 50px;
+    width: 167px;
+    background: #F16D7F;
+    margin-bottom: 96px;
+    border: solid var(--pink-bkg);
+}
+
+.text-reg-1 {
+    width: 652px;
+    margin-bottom: 22px;
+    font-weight: 300;
     font-size: 24px;
-    color: var(--pink-color);
+    line-height: 29px;
+}
+
+.head-reg-h2 {
+    text-transform: uppercase;
+}
+
+
+/*CART*/
+/*SEC 1*/
+.cart {
+    display: flex;
+    align-items: center;
+    height: 148px;
+    margin-bottom: 64px;
+    background: var(--pink-bkg);
 }
 
 /*SEC 2*/
