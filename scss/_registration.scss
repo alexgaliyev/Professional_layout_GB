@@ -1,0 +1,130 @@
+/*SEC 1*/
+.registration {
+    display: flex;
+    align-items: center;
+    height: 148px;
+    margin-bottom: 64px;
+    background: var(--pink-bkg);
+}
+
+/*SEC 2*/
+.reg-sec_2-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-reg {
+    background: #FFFFFF;
+    height: 45px;
+    width: 360px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    text-indent: 16px;
+}
+
+.reg-sec_2-h4 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black-bkj);
+}
+
+.text-reg {
+    width: 359px;
+    color: #B1B1B1;
+}
+
+.text-reg-1 {
+    width: 652px;
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.head-reg-h2 {
+    text-transform: uppercase;
+}
+
+
+/*CART*/
+/*SEC 1*/
+.cart {
+    display: flex;
+    align-items: center;
+    height: 148px;
+    margin-bottom: 64px;
+    background: var(--pink-bkg);
+}
+
+/*SEC 2*/
+.reg-sec_2-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-reg {
+    background: #FFFFFF;
+    height: 45px;
+    width: 360px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    text-indent: 16px;
+}
+
+.head-reg-h4 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--sales-bkg);
+    margin-bottom: 20px;
+}
+
+.reg-sec_2-h4 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black-bkj);
+}
+
+.text-reg {
+    width: 359px;
+    color: #B1B1B1;
+}
+
+.submit {
+    margin-top: 40px;
+    height: 50px;
+    width: 167px;
+    background: #F16D7F;
+    margin-bottom: 96px;
+    border: solid var(--pink-bkg);
+}
+
+.text-reg-1 {
+    width: 652px;
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.head-reg-h2 {
+    text-transform: uppercase;
+}
+
+.gal {
+    position: relative;
+    margin: 0 0 0 30px;
+    margin-bottom: 16px;
+}
+
+.gal::before {
+    top: 7px;
+    left: -30px;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    content: "";
+    background-image: url(img/gal.svg);
+}
