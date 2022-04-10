@@ -1,0 +1,273 @@
+:root {
+    --white-bkg: #FFFF;
+    --black-bkj: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F18899;
+    --sales-bkg: #4E4544;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black-bkj);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.headerH2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+    color: #9F9F9F;
+}
+
+.sec_1-H1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--pink-color);
+}
+
+.submit-click {
+    color: var(--pink-color);
+    margin-bottom: 95px;
+    height: 47px;
+    width: 211px;
+    left: 695.5px;
+    top: 2817.5px;
+    border: 1px solid var(--pink-color);
+}
+
+.submit-click:hover {
+    background: #e05c6e;
+    color: var(--pink-bkg);
+}
+
+.top20px {
+    margin-top: 20px;
+}
+
+.top40px {
+    margin-top: 40px;
+}
+
+
+
+/*Меню*/
+.header-menu {
+    background-color: var(--black-bkj);
+    display: flex;
+    align-items: center;
+}
+
+.header-wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 41px;
+}
+
+.icon {
+    fill: var(--white-bkg);
+}
+
+.icon:hover {
+    fill: var(--pink-color)
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header-link {
+    margin: 0 0 0 33px;
+}
+
+.header-nav {
+    display: none;
+    position: absolute;
+    width: 232px;
+    min-height: 764px;
+    right: 0;
+    top: 75px;
+    background-color: var(--white-bkg);
+    padding-left: 34px;
+    right: 0;
+}
+
+.header-nav-close {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-nav-close-img {
+    margin: 16px 16px 0 0;
+}
+
+.header-burger:hover+.header-nav,
+.header-burger:focus+.header-nav {
+    display: block;
+}
+
+.header-nav-h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.header-nav-h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+.nav-item-title {
+    padding-top: 11px;
+    padding-left: 20px;
+    opacity: 0.6;
+}
+
+.nav-item-title:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-item-title:active {
+    color: var(--pink-color);
+}
+
+.header-link {
+    margin-left: 33px;
+}
+
+
+/*Подвал*/
+.footer-img {
+    background-image: url(img/footer.jpg);
+    display: flex;
+    align-items: center;
+    height: 448px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form-text {
+    width: 350px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-text {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.subscribe-text-p {
+    margin-top: 10px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-input {
+    background: #e1e1e1;
+    min-width: 200px;
+    padding: 14px 20px;
+    border: 1px solid transparent;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+.subscribe-input::placeholder {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.subscribe-input:hover {
+    background: #dbdbdb;
+}
+
+.subscribe-button {
+    border: 1px solid transparent;
+    background-color: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+.subscribe-button:hover {
+    background: #e05c6e;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-bkj);
+}
+
+.text-footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-soc {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-bkg);
+}
+
+.footer-soc:hover {
+    fill: var(--pink-bkg);
+    background-color: var(--pink-color);
+}
