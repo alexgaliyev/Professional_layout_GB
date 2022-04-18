@@ -28,7 +28,6 @@
 .ind-2-sales-item {
     height: 260px;
     width: 360px;
-    background-color: var(--sales-bkg);
 }
 
 .ind-2-sales-item-women {
@@ -220,11 +219,19 @@
         display: none;
     }
 
+    .ind-2-sales-item {
+        margin-top: 30px;
+    }
+
     .ind-1-main-title-wrp {
         width: 236px;
         height: 66;
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+
+    .ind-2-sales-item-whoes {
+        width: 343px;
     }
 
     .sales-list {
@@ -244,5 +251,17 @@
 
     .top40px {
         margin-top: 40px;
+    }
+
+    .ind-2-sales {
+        width: 365px;
+    }
+
+    .ind-3-button {
+        width: 375px;
+    }
+
+    .ind-2-sales-item {
+        width: 359px;
     }
 }
